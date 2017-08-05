@@ -405,7 +405,7 @@ case class Or(left: Expression, right: Expression) extends BinaryOperator with P
       if (input2 == true) {
         true
       } else {
-        if (input1 != null && input2 != null) {
+        if (input1 != null || input2 != null) {
           false
         } else {
           null
